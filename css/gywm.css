@@ -1,0 +1,159 @@
+.oy-gy-1{
+	width: 1400px;
+	height: 500px;
+	background-image: url(../image/facebody.jpg);
+	background-size: 100% 100%;
+	margin-top: 2px;
+}
+body div {
+	margin: 0 auto;
+}
+
+.oy-gy-2 {
+	width: 1400px;
+	height: 850px;
+	position: relative;
+}
+
+.oy-gy-3 {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #513D96;
+	margin-top: 50px;
+}
+.oy-gy-4 {
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: #35275A white white white;
+}
+#oy-zg {
+	width: 4px;
+	height: 0px;
+	background: #513D96;
+	transition: height linear 18.5s;
+}
+
+
+#oy-zd-1{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	left:700px;
+	top: 50px;
+	transition: width linear 1.5s ;
+}
+#oy-zd-2{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	right:700px;
+	top: 150px;
+	transition:width linear 1.5s;
+}
+#oy-zd-3{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	left:700px;
+	top: 250px;
+	transition: width linear 1.5s;
+}
+#oy-zd-4{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	right:700px;
+	top: 350px;
+	transition:width linear 1.5s;
+}
+#oy-zd-5{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	left:700px;
+	top: 450px;
+	transition: width linear 1.5s;
+}
+#oy-zd-6{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	right:700px;
+	top: 550px;
+	transition: width linear 1.5s;
+}
+#oy-zd-7{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	left:700px;
+	top: 650px;
+	transition: width linear 1.5s;
+}
+#oy-zd-8{
+	height: 3px;
+	width: 0px;
+	background: #513D96;
+	position: absolute;
+	right:700px;
+	top: 750px;
+	transition: width linear 1.5s;
+}
+#oy-hz-1,#oy-hz-2,#oy-hz-3,#oy-hz-4,#oy-hz-5,#oy-hz-6,#oy-hz-7,#oy-hz-8{
+	width: 250px;
+	height: 100px;
+	opacity: 0;
+	background: #513D96;
+	border-radius: 10px;
+	color: white;
+	transition: opacity linear 2s;
+}
+#oy-hz-1{
+	position: absolute;
+	left: 725px;
+	top: 0px;
+}
+#oy-hz-2{
+	position: absolute;
+	right: 725px;
+	top: 100px;
+}
+#oy-hz-3{
+	position: absolute;
+	left: 725px;
+	top: 200px;
+}
+#oy-hz-4{
+	position: absolute;
+	right: 725px;
+	top: 300px;
+}
+#oy-hz-5{
+	position: absolute;
+	left: 725px;
+	top: 400px;
+}
+#oy-hz-6{
+	position: absolute;
+	right: 725px;
+	top: 500px;
+}
+#oy-hz-7{
+	position: absolute;
+	left: 725px;
+	top: 600px;
+}
+#oy-hz-8{
+	position: absolute;
+	right: 725px;
+	top: 700px;
+}

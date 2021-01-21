@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新闻动态</title>
+		<link rel="stylesheet" href="../css/index_head.css" />
+		<link rel="stylesheet" href="../css/xwdt.css" />
+		<link rel="icon" href="../image/tubiao.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	</head>
+	<body style="margin: 0%;">
+		<div id="app">
+			<div class="oy-head">
+				<div class="oy-head-1">
+					<div class="oy-head-5"></div>
+					<div style="width: 950px;height: 55px;float: right;color: white;"></div>
+					<div style="width: 950px;height: 60px;float: right;">
+						<ul class="oy-head-ul">
+							<li><a href="lxwm.html">Connect<br /><span>联系我们</span></a></li>
+							<li><a href="xwdt.html">News Trends<br /><span>新闻动态</span></a></li>
+							<li><a href="kjcp.html">Technology<br /><span>科技测评</span></a></li>
+							<li><a href="qsntsn.html">Teenager <br /><span>青少年体适能</span></a></li>
+							<li><a href="cgzx.html">Venue centre<br /><span>场馆中心</span></a></li>
+							<li id="ydxy">Sports institute<br /><span>运动学院</span>
+								<div class="oy-head-3">
+									<div><a href="ppjm.html">品牌加盟</a></div>
+									<div><a href="ydxy.html">运动学院</a></div>
+								</div>
+							</li>
+							<li><a href="gywm.html">About<br /><span>关于我们</span></a></li>
+							<li><a href="index.html">Home<br /><span>首页</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="oy-xw-1">
+
+			</div>
+			<div style="width: 1400px;height: 50px;margin-top: 50px;line-height: 50px;text-align: center;">
+				<h1>新闻中心</h1>
+			</div>
+
+			<div class="oy-xw-2" id="xwzx">
+
+			</div>
+
+			<div style="width: 1400px;height: 50px;margin-top: 20px;line-height: 50px;text-align: center;">
+				<button style="width: 150px;height: 30px;cursor: pointer;" @click="ljgd()">了解更多</button>
+			</div>
+			<el-dialog :visible.sync="dialogVisible" width="450px" height="500px">
+				<div style="width: 50%;height: 200px;">
+					<img src="../image/erweima.png" style="width: 100%;height: 100%;" />
+				</div>
+				<div style="width: 100%;height: 50px;text-align: center;font-size: 18px;line-height: 80px;">添加微信了解更多</div>
+			</el-dialog>
+
+			<div class="oy-tail-1">
+				<div style="width: 250px;height: 80px;" class="oy-tail-4"></div>
+				<div class="oy-tail-2">
+					<div>
+						<img src="../image/gongzhonghao.jpg" style="float: left;width: 100%;height: 128px;">
+						FaceBody公众号
+					</div>
+					<div>
+						<img src="../image/kefu.png" style="float: left;width: 100%;height: 128px;">
+						FaceBody客服
+					</div>
+					<div>
+						<img src="../image/xiaochengxu.jpg" style="float: left;width: 100%;height: 128px;">
+						FaceBody小程序
+					</div>
+					<div>
+						<img src="../image/jiaruwomen.png" style="float: left;width: 100%;height: 128px;">
+						加入我们
+					</div>
+				</div>
+			</div>
+			<div class="oy-tail-3">©2020上海颜深健康管理咨询有限公司版权所有 沪ICP备000000000号 公网安备0000000000000号</div>
+		</div>
+	</body>
+	<script>
+		new Vue({
+			el: '#app',
+			data: function() {
+				return {
+					visible: false,
+					images: ['../image/facebody.jpg', '../image/facebody2.jpg', '../image/facebody3.jpg'],
+					xwdtimages: [
+						'../image/facebody.jpg',
+						'../image/facebody.jpg',
+						'../image/facebody.jpg',
+						'../image/facebody.jpg',
+						'../image/facebody.jpg',
+						'../image/facebody.jpg'
+					],
+					xwdttexts: [
+						'这里是文本',
+						'这里是文本',
+						'这里是文本',
+						'这里是文本',
+						'这里是文本',
+						'这里是文本'
+					],
+					dialogVisible:false
+				}
+			},
+			methods: {
+				ljgd() {
+					this.dialogVisible=true
+				},
+				insert() {
+					var html = ''
+					for (var i = 0; i < this.xwdtimages.length; i++) {
+						html += '<div><div class="oy-xw-3"><img src="' + this.xwdtimages[i] + '"/></div>' +
+							'<div class="oy-xw-4">' + this.xwdttexts[i] + '</div></div>'
+					}
+					document.getElementById('xwzx').innerHTML = html
+				}
+			},
+			created() {
+				this.insert()
+			}
+		})
+	</script>
+</html>

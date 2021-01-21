@@ -1,0 +1,40 @@
+.oy-kj-1{
+	width: 1400px;
+	height: 500px;
+	background-image: url(../image/facebody.jpg);
+	background-size: 100% 100%;
+	margin-top: 2px;
+}
+.oy-kj-2{
+	width: 1400px;
+	height: 800px;
+	margin-top: 20px;
+}
+.oy-kj-2 div{
+	width: 33.33%;
+	height: 500px;
+	float: left;
+	text-align: center;
+}
+.oy-kj-2 div div{
+	width: 60%;
+	height: 400px;
+	background: red;
+	margin-left: 20%;
+	background-image: url(../image/facebody.jpg);
+	background-size: 100% 100%;
+}
+.oy-kj-3{
+	width: 1400px;
+	height: 500px;
+	margin-top: 20px;
+	background: #878383;
+}
+.oy-kj-4{
+	width: 1400px;
+	height: 300px;
+	margin-top: 20px;
+	border: #878383 2px solid;
+	text-align: center;
+	font-size: 20px;
+}

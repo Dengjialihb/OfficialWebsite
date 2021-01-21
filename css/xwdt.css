@@ -1,0 +1,40 @@
+.oy-xw-1{
+	width: 1400px;
+	height: 500px;
+	background-image: url(../image/facebody.jpg);
+	background-size: 100% 100%;
+	margin-top: 2px;
+}
+.oy-xw-2{
+	width: 1400px;
+	overflow:hidden;
+}
+.oy-xw-2 div{
+	width: 33.33%;
+	height: 450; 
+	float: left;
+}
+.oy-xw-2 div div{
+	width: 80%;
+	height: 450;
+	text-align: center;
+	float: left;
+	margin-left: 10%;
+}
+.oy-xw-2 div .oy-xw-3{
+	margin-top: 5%;
+	height: 300px;
+}
+.oy-xw-2 div .oy-xw-4{
+	text-align: center;
+	float: left;
+	margin-left: 10%;
+	background: #B8B8B8;
+	line-height: 150px;
+	height: 150px;
+	
+}
+.oy-xw-2 div img{
+	width: 100%;
+	height: 100%;
+}

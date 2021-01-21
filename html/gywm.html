@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>关于我们</title>
+		<link rel="stylesheet" href="../css/index_head.css" />
+		<link rel="stylesheet" href="../css/gywm.css" />
+		<link rel="icon" href="../image/tubiao.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	</head>
+	<body style="margin: 0%;">
+		<div id="app">
+			<div class="oy-head">
+				<div class="oy-head-1">
+					<div class="oy-head-5"></div>
+					<div style="width: 950px;height: 55px;float: right;color: white;"></div>
+					<div style="width: 950px;height: 60px;float: right;">
+						<ul class="oy-head-ul">
+							<li><a href="lxwm.html">Connect<br /><span>联系我们</span></a></li>
+							<li><a href="xwdt.html">News Trends<br /><span>新闻动态</span></a></li>
+							<li><a href="kjcp.html">Technology<br /><span>科技测评</span></a></li>
+							<li><a href="qsntsn.html">Teenager <br /><span>青少年体适能</span></a></li>
+							<li><a href="cgzx.html">Venue centre<br /><span>场馆中心</span></a></li>
+							<li id="ydxy">Sports institute<br /><span>运动学院</span>
+								<div class="oy-head-3">
+									<div><a href="ppjm.html">品牌加盟</a></div>
+									<div><a href="ydxy.html">运动学院</a></div>
+								</div>
+							</li>
+							<li><a href="gywm.html">About<br /><span>关于我们</span></a></li>
+							<li><a href="index.html">Home<br /><span>首页</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="oy-gy-1">
+
+			</div>
+			<div style="width: 1400px;height: 50px;text-align: center;margin-top: 50px;">
+				<h1>公司简介</h1>
+			</div>
+			<div style="width: 1400px;height: 450px;margin-top: 20px;">
+				<div style="width: 40%;height: 450px;float: left;position: relative;left: 5%;top: 10%;">
+					<el-carousel height="350px">
+						<el-carousel-item v-for="image in images" :key="image">
+							<img :src="image" style="width: 100%;height: 350px;" />
+						</el-carousel-item>
+					</el-carousel>
+				</div>
+				<div style="width: 50%;height: 450px;float: right;background-color: #DADAD8;text-align: center;line-height: 450px;">
+					这里是公司简介
+				</div>
+			</div>
+			<div style="width: 1400px;height: 50px;text-align: center;margin-top: 50px;">
+				<h1>品牌介绍</h1>
+			</div>
+			<div style="width: 1400px;height: 450px;margin-top: 20px;">
+				<div style="width: 40%;height: 450px;float: right;position: relative;right: 5%;top: 10%;">
+					<el-carousel height="350px">
+						<el-carousel-item v-for="image in images" :key="image">
+							<img :src="image" style="width: 100%;height: 350px;" />
+						</el-carousel-item>
+					</el-carousel>
+				</div>
+				<div style="width: 50%;height: 450px;float: left;background-color: #DADAD8;text-align: left;font-size: 20px;opacity: 0.5;">
+					<div style="width: 80%;margin-left: 10%;">
+						<h2 style="width: 100%;text-align: center;margin-top: 60px;">FaceBody品牌简介</h2>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FaceBody颜身运动是上海颜深健康管理咨询有限公司旗下小团体私教连锁品牌,我们朝气蓬勃的团队于2017年4月成立于上海。
+						目前已成功在上海拓展6家门店，均受到了用户的广泛好评，现已服务突破50万人次。
+						FaceBody颜身运动倡导的是一种潮流运动的生活方式，是所有热爱运动，有好奇心，向往自由生活的人群的聚集地。
+						我们不仅仅只有健身，更有极具个性的运动品牌联盟，我们一起将FaceBody打造成为一个一站式运动打卡空间，健身、服饰、鞋帽、补给、饮品、器械、赛事，你想玩想要的这里全都有。
+					</div>
+				</div>
+			</div>
+
+			<div style="width: 1400px;height: 50px;text-align: center;margin-top: 50px;">
+				<h1>发展历程</h1>
+			</div>
+
+			<div class="oy-gy-2">
+				<div class="oy-gy-3"></div>
+				<div id="oy-zg"></div>
+				<div class="oy-gy-4"></div>
+				<div id="oy-zd-1"></div>
+				<div id="oy-zd-2"></div>
+				<div id="oy-zd-3"></div>
+				<div id="oy-zd-4"></div>
+				<div id="oy-zd-5"></div>
+				<div id="oy-zd-6"></div>
+				<div id="oy-zd-7"></div>
+				<div id="oy-zd-8"></div>
+				<div id="oy-hz-1">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2017.4
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						团队成立
+					</div>
+				</div>
+				<div id="oy-hz-2">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2017.9
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						松江东鼎馆营业
+					</div>
+				</div>
+				<div id="oy-hz-3">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2018.8
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						松江泗泾馆营业
+					</div>
+				</div>
+				<div id="oy-hz-4">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2019.6
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						第一届障碍耐力赛事——FBG
+					</div>
+				</div>
+				<div id="oy-hz-5">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2019.9
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						松江亚繁亚乐城馆营业
+					</div>
+				</div>
+				<div id="oy-hz-6">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2019.11
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						嘉定大融城馆营业
+					</div>
+				</div>
+				<div id="oy-hz-7">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2020.9
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						第二届障碍耐力赛事——FBG
+					</div>
+				</div>
+				<div id="oy-hz-8">
+					<div style="width: 100%;height: 50%;text-align: center;font-weight: bolder;color: #FDD000;font-size: 24px;line-height: 50px;">
+						2020.11
+					</div>
+					<div style="width: 100%;height: 50%;text-align: center;">
+						运动营养品事业部成立
+					</div>
+				</div>
+			</div>
+
+			<div class="oy-tail-1">
+				<div style="width: 250px;height: 80px;" class="oy-tail-4"></div>
+				<div class="oy-tail-2">
+					<div>
+						<img src="../image/gongzhonghao.jpg" style="float: left;width: 100%;height: 128px;">
+						FaceBody公众号
+					</div>
+					<div>
+						<img src="../image/kefu.png" style="float: left;width: 100%;height: 128px;">
+						FaceBody客服
+					</div>
+					<div>
+						<img src="../image/xiaochengxu.jpg" style="float: left;width: 100%;height: 128px;">
+						FaceBody小程序
+					</div>
+					<div>
+						<img src="../image/jiaruwomen.png" style="float: left;width: 100%;height: 128px;">
+						加入我们
+					</div>
+				</div>
+			</div>
+			<div class="oy-tail-3">©2020上海颜深健康管理咨询有限公司版权所有 沪ICP备000000000号 公网安备0000000000000号</div>
+		</div>
+	</body>
+	<script>
+		new Vue({
+			el: '#app',
+			data: function() {
+				return {
+					visible: false,
+					images: ['../image/facebody.jpg', '../image/facebody2.jpg']
+				}
+			},
+			methods: {
+				fun() {
+					window.onload = function() {
+						document.getElementById("oy-zg").style.height = '800px'
+						setTimeout(function() {
+							document.getElementById("oy-zd-1").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-1").style.opacity = 1;
+							}, 1450)
+						}, 840)
+						setTimeout(function() {
+							document.getElementById("oy-zd-2").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-2").style.opacity = 1;
+							}, 1450)
+						}, 3200)
+						setTimeout(function() {
+							document.getElementById("oy-zd-3").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-3").style.opacity = 1;
+							}, 1450)
+						}, 5510)
+						setTimeout(function() {
+							document.getElementById("oy-zd-4").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-4").style.opacity = 1;
+							}, 1450)
+						}, 7880)
+						setTimeout(function() {
+							document.getElementById("oy-zd-5").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-5").style.opacity = 1;
+							}, 1450)
+						}, 10000),
+						setTimeout(function() {
+							document.getElementById("oy-zd-6").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-6").style.opacity = 1;
+							}, 1450)
+						}, 12500),
+						setTimeout(function() {
+							document.getElementById("oy-zd-7").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-7").style.opacity = 1;
+							}, 1450)
+						}, 14700),
+						setTimeout(function() {
+							document.getElementById("oy-zd-8").style.width = '25px';
+							setTimeout(function() {
+								document.getElementById("oy-hz-8").style.opacity = 1;
+							}, 1450)
+						}, 17100)
+					}
+				},
+			},
+			mounted() {
+				this.fun()
+			}
+		})
+	</script>
+</html>
