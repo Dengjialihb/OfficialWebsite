@@ -36,14 +36,14 @@
 			</div>
 
 			<section class="section33">
-				<div class="content">
-					<div class="g-title">
+				<div class="content" style="width: 1600px">
+					<div class="g-title" style="width: 1228px">
 						<h2>Locations<span>运动场馆</span></h2>
 					</div>
-					<div style="width: 1400px;height: 400px;margin-top: 50px;">
-						<el-carousel :interval="3000" type="card" height="400px">
+					<div style="width: 1700px;height: 600px;margin-top: 50px;">
+						<el-carousel :interval="3000" type="card" height="600px">
 							<el-carousel-item v-for="image in images" :key="image">
-								<img :src="image" style="width: 100%;height: 400px;" />
+								<img :src="image" style="height: 600px;" />
 							</el-carousel-item>
 						</el-carousel>
 					</div>
@@ -54,11 +54,7 @@
 					<div class="g-title">
 						<h2>Workout<span>课程简介</span></h2>
 					</div>
-					<div class="video_div_one">
-						<video class="video-bg" muted autoplay loop src="../video/FACEBODY课程介绍.mp4"></video>
-					</div>
 					<div class="video_div">
-						<div style="">
 							<div class="video_text">
 								<span style="    font-size: 29px;">Sports philosophy</span><br/>
 								<span style="    font-size: 25px;">运动哲学</span><br/><br/><br/>
@@ -66,14 +62,18 @@
 								现代生活没有运动机会才逐渐忘记了运动技能，<br/>
 								FaceBody 运动能力训练法，<br/>
 									帮你回复被遗忘的运动能力</span><br/><br/><br/>
-								<span  style="    font-size: 29px;">Courses system</span><br/>
-								<span style="    font-size: 25px;">课程体系</span><br/><br/><br/>
-								<span >根据人体运动学习能力，<br/>
-								我们将课程分为了4大类，<br/>
-									来逐步培训提高你的运动能力</span>
 							</div>
+							<video class="video-bg" muted autoplay loop src="../video/FACEBODY课程介绍.mp4"></video>
+
+
+						<img src="../image/kecheng.png" style="float:left;width: 503px">
+						<div class="video_text_one">
+						<span  style="    font-size: 29px;">Courses system</span><br/>
+						<span style="    font-size: 25px;">课程体系</span><br/><br/><br/>
+						<span >根据人体运动学习能力，<br/>
+								我们将课程分为了4大类，<br/>
+							来逐步培训提高你的运动能力</span>
 						</div>
-<!--						<img src="../image/kecheng.png">-->
 					</div>
 					<ul class="list">
 						<li>
@@ -165,22 +165,28 @@
 							</div>
 						</div>
 						<div class="item item2 mdiv"><img src="../image/img12-1.jpg" alt=""></div>
-						<div class="item item3 mhdiv"><img src="../image/img12-2.jpg" alt=""></div>
-						<div class="item item4 mhdiv">
-							<h3>Frank</h3>
-							<div class="txt1">汪 浩 /</div>
-							<div class="con">
-								<p>私人健康教练/培训师/私教小团体讲师/管理能量课程创始人</p>
-								<p>资格认证:ACE-CPT(美国运动委员会私人教练)</p>
-								<p>NSCA-CPT(美国国家体能协会私人教练)</p>
-								<p>CKI私教小团体培训讲师</p>
-								<p>CFSC功能性认证教练</p>
-								<p>Cross core RPTFMS&L1 认证教练</p>
-								<p>VIPR&L1、L2认证教练</p>
-								<p>足球/高尔夫运动员体能训练师</p>
-								<p>多位影视明星私人教练</p>
-							</div>
-						</div>
+<!--						<div class="item item3 mhdiv"><img src="../image/img12-4.jpg" alt=""></div>-->
+<!--						<div class="item item4 mhdiv">-->
+<!--							<h3>Deniz</h3>-->
+<!--							<div class="txt1">FB运动教练/</div>-->
+<!--							<div class="con">-->
+<!--								<p>幽默而激情的外教，体贴每一位会员的状态</p>-->
+<!--								<p>拳击高手Certificated personal trainer</p>-->
+<!--								<p>Taekwondo black belt。</p>-->
+<!--								<p>运动会带给你更好的生活质量，让你保持年轻和活力。</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="item item1 mdiv">-->
+<!--							<h3>Luo</h3>-->
+<!--							<div class="txt1">罗琦森 | FB运动教练 /</div>-->
+<!--							<div class="con">-->
+<!--								<p>代课经验丰富，善于因人而异安排训练计划</p>-->
+<!--								<p>CrossFit L1 trainer / CrossFit L2 trainer</p>-->
+<!--								<p>2014-2017 ET box馆主。</p>-->
+<!--								<p>训练就是生活的一部分，坚持下来你会看到越来越好的自己。</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="item item2 mdiv"><img src="../image/img12-5.jpg" alt=""></div>-->
 						<div class="item item5 mdiv"><img src="../image/img12-3.jpg" alt=""></div>
 						<div class="item item6 mdiv">
 							<h3>Martin</h3>
@@ -283,7 +289,7 @@
 			data: function() {
 				return {
 					visible: false,
-					images: ['../image/index1.jpg', '../image/index5.jpg', '../image/index3.jpg', '../image/index4.jpg']
+					images: ['../image/store/dongding.jpg', '../image/store/malu.jpg', '../image/store/sijin.jpg', '../image/store/yafan.jpg']
 				}
 			}
 		})
