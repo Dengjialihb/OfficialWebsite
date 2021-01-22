@@ -11,9 +11,14 @@
 	float: left;
 }
 .oy-lx-2{
-	width: 100%;
+	width: 1400px;
 	height: 500px;
 	background-image: url(../image/facebody.jpg);
 	background-size: 100% 100%;
 	margin-top: 2px;
+}
+.oy-lx-3 { height:0px;  }
+@media screen and (max-width: 1000px)
+{
+.oy-lx-3 { height:1200px; }
 }
