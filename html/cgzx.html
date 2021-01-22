@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="../css/main.css">
 		<link rel="stylesheet" href="../css/cerficate.css" />
 		<link rel="stylesheet" href="../css/index_head.css" />
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 		<link rel="icon" href="../image/tubiao.png" type="image/x-icon">
 	</head>
 	<body style="margin: 0%;">
@@ -56,17 +57,12 @@
 					<div class="g-title">
 						<h2>Locations<span>运动场馆</span></h2>
 					</div>
-					<div id="banner">
-						<div id="carousel">
-							<img src="../image/1.png" data-url="#">
-							<img src="../image/4.png" data-url="#">
-							<img src="../image/1.png" data-url="#">
-							<img src="../image/4.png" data-url="#">
-							<img src="../image/1.png" data-url="#">
-							<img src="../image/4.png" data-url="#">
-							<img src="../image/1.png" data-url="#">
-							<img src="../image/4.png" data-url="#">
-						</div>
+					<div style="width: 1400px;height: 400px;margin-top: 50px;">
+						<el-carousel :interval="3000" type="card" height="400px">
+							<el-carousel-item v-for="image in images" :key="image">
+								<img :src="image" style="width: 100%;height: 400px;" />
+							</el-carousel-item>
+						</el-carousel>
 					</div>
 				</div>
 			</section>
@@ -142,7 +138,7 @@
 					</ul>
 					<div class="video_div">
 						<div class="video_text">FaceBody课程简介</div>
-						<video class="video-bg" muted autoplay loop src="video/FACEBODY课程介绍.mp4"></video>
+						<video class="video-bg" muted autoplay loop src="../video/FACEBODY课程介绍.mp4"></video>
 					</div>
 				</div>
 			</section>
@@ -278,7 +274,18 @@
 	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/slide.min.js"></script>
 	<script src="../js/slider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 	<script type="text/javascript">
+		new Vue({
+			el: '#app',
+			data: function() {
+				return {
+					visible: false,
+					images: ['../image/index1.jpg', '../image/index5.jpg', '../image/index3.jpg', '../image/index4.jpg']
+				}
+			}
+		})
 		$(document).ready(function() {
 			$(".mdiv").hover(function() {
 				$(this).css("background-color", "#533c8f");
