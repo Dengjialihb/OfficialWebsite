@@ -83,20 +83,28 @@ ul, li, ol { list-style: none; line-height: normal; }
     width: 100%;
     height: 608px;
     margin-top: 5%;
-    background: white;
+    background: #9d96b24d;
+    margin-bottom: 36px;
+}
+video_div_one{
+    width: 100%;
+    height: 608px;
+    margin-top: 5%;
+    margin-bottom: 36px;
 }
 .video_div .video-bg{
     width: 64%;
     height: 497px;
-    margin-top: 30px;
     float: left;
     position: relative;
 }
 .video_text{
-    width: 148px;
+    width: 348px;
     float: left;
-    height: 200px;
-    margin: 19% 71px 0px 17%;
+    height: 400px;
+    color: gray;
+    font-family: "Century Gothic";
+    margin: 30px 23px 0px 49px;
 }
 .ppjm-1 div{
 	width: 350px;
