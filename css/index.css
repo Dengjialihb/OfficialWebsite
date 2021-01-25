@@ -6,10 +6,10 @@
 .oy-body-1 { width:100%;  }
 @media screen and (max-width: 1000px)
 {
-.oy-body-1 { width:1400px; }
+.oy-body-1 { width:1280px; }
 }
 .oy-body-2{
-	width: 1400px;
+	width: 1280px;
 	height: 200px;
 	margin-top: 2px;
 }
@@ -20,7 +20,7 @@
 	float: left;
 	text-align: center;
 	line-height: 100px;
-	margin-left: 120px;
+	margin-left: 95px;
 	margin-top: 50px;
 	font-size: 14px;
 }
@@ -28,12 +28,12 @@
 	cursor: pointer;
 }
 .oy-body-3{
-	width: 1400px;
+	width: 1280px;
 	height: 600px;
 	margin-top: 2px;
 }
 .oy-body-3 div{
-	width: 1400px;
+	width: 1280px;
 	height: 300px;
 	text-align: left;
 	font-size: 20px;
@@ -41,7 +41,7 @@
 	
 }
 .oy-body-4{
-	width: 1400px;
+	width: 1280px;
 	height: 80px;
 	margin-top: 130px;
 	font-size: 40px;
@@ -49,7 +49,7 @@
 	line-height: 80px;
 }
 .oy-body-5{
-	width: 1400px;
+	width: 1280px;
 	height: 100px;
 	text-align: center;
 	margin-top: 80px;

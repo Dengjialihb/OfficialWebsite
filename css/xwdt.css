@@ -1,13 +1,14 @@
 .oy-xw-1{
-	width: 1400px;
+	width: 1280px;
 	height: 500px;
 	background-image: url(../image/facebody.jpg);
 	background-size: 100% 100%;
 	margin-top: 2px;
 }
 .oy-xw-2{
-	width: 1400px;
+	width: 1280px;
 	overflow:hidden;
+	margin-top: 50px;
 }
 .oy-xw-2 div{
 	width: 33.33%;
@@ -30,12 +31,12 @@
 	float: left;
 	margin-left: 10%;
 	background: #B8B8B8;
-	width: 332.8px;
+	width: 301.2px;
 	height: 150px;
 	font-weight: bold;
 	color: #3B3B3C;
 	padding:10px 20px 20px 20px;
-	font-size: 15px;
+	font-size: 14px;
 }
 .oy-xw-2 div img{
 	width: 100%;

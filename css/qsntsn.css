@@ -1,23 +1,23 @@
 .oy-tsn-1{
-	width:1400px;
+	width:1280px;
 	height: 500px;
 	background-image: url(../image/facebody.jpg);
 	background-size: 100% 100%;
 	margin-top: 2px;
 }
 .oy-tsn-2{
-	width: 1400px;
+	width: 1280px;
 	height: 750px;
-	margin-top: 5px;
+	margin-top: 50px;
 }
 .oy-tsn-2 div{
 	height: 250px;
 	float: left;
 }
 .oy-tsn-3{
-	width: 1400px;
+	width: 1280px;
 	height: 1200px;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 .oy-tsn-3 div{
 	height: 400px;

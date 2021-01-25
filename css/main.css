@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /** Created by UICUT.com on 2016/12/31. Contact QQ: 215611388 */
 .purple { color: #533c8f; }
 
@@ -80,7 +80,7 @@ optgroup { font-weight: bold; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, a, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea, article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, nav, section, source, video, time { margin: 0; padding: 0; font-weight: normal; font-style: normal; font-size: 100%; font-family: inherit; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: justify; }
+body,div,address, blockquote, iframe, .list, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, a, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea, article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, nav, section, source, video, time { margin: 0; padding: 0; font-weight: normal; font-style: normal; font-size: 100%; font-family: inherit; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: justify; }
 
 body { color: #231815; background: #fff; font: 8px; overflow-x: hidden; }
 

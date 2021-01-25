@@ -87,16 +87,16 @@ ul, li, ol { list-style: none; line-height: normal; }
     margin-bottom: 36px;
 }
 video_div_one{
-    width: 100%;
+    width: 1280px;
     height: 608px;
     margin-top: 5%;
     margin-bottom: 36px;
 }
-.video_div .video-bg{
-    width: 64%;
+.video_div {
+    width: 1280px;
     height: 497px;
     float: left;
-    position: relative;
+    /* position: relative; */
 }
 .video_text{
     width: 348px;

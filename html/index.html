@@ -9,14 +9,17 @@
 		<link rel="stylesheet" href="../css/element-ui.css">
 		<script src="../js/vue.js"></script>
 		<script src="../js/element-ui.js"></script>
+		<!-- https://unpkg.com/element-ui@2.15.0/lib/index.js -->
+		<!-- https://cdn.jsdelivr.net/npm/vue/dist/vue.js -->
+		<!-- https://unpkg.com/element-ui@2.15.0/lib/theme-chalk/index.css -->
 	</head>
 	<body style="margin: 0%;">
 		<div id="app">
 			<div class="oy-head">
 				<div class="oy-head-1">
 					<div class="oy-head-5"></div>
-					<div style="width: 950px;height: 55px;float: right;color: white;"></div>
-					<div style="width: 950px;height: 60px;float: right;">
+					<div style="width: 920px;height: 55px;float: right;color: white;"></div>
+					<div style="width: 920px;height: 60px;float: right;">
 						<ul class="oy-head-ul">
 							<li><a href="lxwm.html">Connect<br /><span>联系我们</span></a></li>
 							<li><a href="xwdt.html">News Trends<br /><span>新闻动态</span></a></li>
@@ -38,7 +41,7 @@
 
 			<div class="oy-body-1">
 				<!-- autoplay -->
-				<video src="https://res.facebodyfitness.com/onlinevideo/video/e1239892-9c4c-4f17-bcc8-30d90df12d6d.mp4" style="width:100%;height:100%;object-fit:fill"></video>
+				<video muted autoplay loop src="https://res.facebodyfitness.com/onlinevideo/video/e1239892-9c4c-4f17-bcc8-30d90df12d6d.mp4" style="width:100%;height:100%;object-fit:fill"></video>
 			</div>
 			<div class="oy-body-2">
 				<div><a href="ydxy.html"><img src="../image/ydxy.png" style="width: 100%;height: 100%;" /></a></div>
@@ -60,7 +63,7 @@
 				<div style="width: 82%;"><img src="../image/gongsijianjie2.jpg" style="float: left;width: 100%;height: 400px;"></div>
 			</div>
 			<div class="oy-body-4"><img src="../image/BetterSelf.png" style="width: 100%;height: 100%;" /></div>
-			<div style="width: 1400px;height: 400px;margin-top: 50px;">
+			<div style="width: 1280px;height: 400px;margin-top: 50px;">
 				<el-carousel :interval="3000" type="card" height="400px">
 					<el-carousel-item v-for="image in images" :key="image">
 						<img :src="image" style="width: 100%;height: 400px;" />

@@ -1,6 +1,9 @@
 body div{
 	margin:0 auto;
 }
+body{
+	font-family: 微软雅黑 !important;
+}
 .oy-head{
 	height: 115px;
 	background-color: #523d95;
@@ -8,16 +11,16 @@ body div{
 .oy-head { width:100%;  }
 @media screen and (max-width: 1000px)
 {
-.oy-head { width:1400px; }
+.oy-head { width:1280px; }
 }
 
 .oy-head-1{
-	width:1400px;
+	width:1280px;
 	height: 115px;
 }
 .oy-head-ul{
 	float: right;
-	width: 1400px;
+	width: 1280px;
 	float: right;
 	margin-right: 20px;
 	z-index: 99;
@@ -86,7 +89,7 @@ body div{
 }
 .oy-head-5{
 	float: left;
-	width: 450px;
+	width: 360px;
 	height: 115px;
 	background-image: url(../image/logo.png);
 	background-repeat:no-repeat;
@@ -102,18 +105,18 @@ body div{
 .oy-tail-1 { width:100%;  }
 @media screen and (max-width: 1000px)
 {
-.oy-tail-1 { width:1400px; }
+.oy-tail-1 { width:1280px; }
 }
 
 .oy-tail-2{
-	width: 1400px;
+	width: 1280px;
 	height: 170px;
 }
 .oy-tail-2 div{
 	width: 125px;
 	height: 125px;
 	float: left;
-	margin-left: 180px;
+	margin-left: 155px;
 	margin-top: 15px;
 	color: white;
 	text-align: center;
