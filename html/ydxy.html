@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" >
+		<meta charset="UTF-8">
 		<title>运动学院</title>
 		<link rel="stylesheet" href="../css/cerficate.css">
+<!--		<link rel="stylesheet" href="../css/main.css">-->
 		<link rel="stylesheet" href="../css/index_head.css" />
 		<link rel="stylesheet" href="../css/element-ui.css">
 		<script src="../js/vue.js"></script>
@@ -46,11 +46,8 @@
 				<div>
 					<div style="color: gray;font-size: 22px;height: 50px;width: 100px;">证书查询</div>
 					<div style="width: 400px;height: 100px;text-align: center;    position: relative;">
-						<form action="http://djl.free.idcfengye.com/FaceBody/html/zscx.html" method="post">
-							<input type="text" placeholder="请输入证书编号" name="crid" class="cer_input" style="width: 218px;    position: relative;height: 39px;border-radius: 51px;border-color: gray;outline: none;font-size: 16px;padding-left: 33px;">
-							<img src="../image/search.png" type="submit" style="position: absolute;left: 277px;top: 7px;"	>
-							<input type="submit" value="Submit" />
-						</form>
+						<input type="text" placeholder="请输入证书编号" v-model="id" name="crid" class="cer_input" style="width: 218px;    position: relative;height: 39px;border-radius: 51px;border-color: gray;outline: none;font-size: 16px;padding-left: 33px;">
+						<img src="../image/search.png" style="position: absolute;left: 277px;top: 7px;" id="search" @click="cx">
 					</div>
 				</div>
 			</div>
@@ -80,7 +77,7 @@
 
 			</div>
 
-			<div style="width: 1280px;height: 500px;margin-top: 50px;">
+			<div style="width: 1280px;height: 650px;margin-top: 50px;">
 				<div style="width: 255px;font-size: 32px;color: gray;height:13%;">
 					<div style="border-bottom: 2px solid gray;height: 60px;width:100%;text-align: center;">
 						运动学院资质
@@ -93,7 +90,7 @@
 				</el-carousel>
 			</div>
 			<section class="section31" id="home_kctd">
-			<div style="width: 1280px;height: 1500px;margin-top: 50px;">
+			<div style="width: 1280px;height:1038px;margin-top: 50px;">
 				<div class="g-title">
 					<h2>Workout<span>课程简介</span></h2>
 				</div>
@@ -107,8 +104,8 @@
 									帮你回复被遗忘的运动能力</span><br/><br/><br/>
 					</div>
 					<video class="video-bg" muted autoplay loop src="../video/FACEBODY课程介绍.mp4"></video>
-
-
+				</div>
+				<div class="video_div">
 					<img src="../image/kecheng.png" style="float:left;width: 503px">
 					<div class="video_text_one">
 						<span  style="    font-size: 29px;">Courses system</span><br/>
@@ -118,61 +115,228 @@
 							来逐步培训提高你的运动能力</span>
 					</div>
 				</div>
-				<div style="width: 255px;font-size: 32px;color: gray;height:100px;">
-					<div style="border-bottom: 2px solid gray;height: 60px;width:100%;text-align: center;">
-						课程简介
-					</div>
-				</div>
-				<div style="float: left;width: 50%;">
-					<div style="float: right;width: 80%;height: 50%;margin-right: 96px;">
-						<img src="../image/1.png" style="margin-top: 110px;width: 100%;height: 100%;">
-					</div>
-				</div>
-				<div style="float: left;width: 35%;height: 500px;background: white;">
-					<div>文本</div>
-				</div>
+<!--				<div style="width: 255px;font-size: 32px;color: gray;height:100px;">-->
+<!--					<div style="border-bottom: 2px solid gray;height: 60px;width:100%;text-align: center;">-->
+<!--						课程简介-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div style="float: left;width: 50%;">-->
+<!--					<div style="float: right;width: 80%;height: 50%;margin-right: 96px;">-->
+<!--						<img src="../image/1.png" style="margin-top: 110px;width: 100%;height: 100%;">-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div style="float: left;width: 35%;height: 500px;background: white;">-->
+<!--					<div>文本</div>-->
+<!--				</div>-->
 			</div>
 			</section>
 
-			<div style="width: 1280px;height: 700px;margin-top: 50px;">
-				<div style="width: 255px;font-size: 32px;color: gray;height: 13%;">
+			<div style="width: 1280px;margin-top: 50px;">
+				<div style="width: 255px;font-size: 32px;color: gray;height: 120px;">
 					<div style="border-bottom: 2px solid gray;height: 60px;width: 100%;text-align: center;">
 						日程安排
 					</div>
 				</div>
-				<div style="width: 100%;height: 87%;">
-					<img src="../image/1.png" style="width: 100%;height: 100%;">
+				<div style="width: 1280px;">
+					<table id="ytable">
+						<tbody>
+						<tr>
+							<td>日期</td>
+							<td>课时</td>
+							<td>培训主题</td>
+							<td>具体内容</td>
+							<td>学习目标</td>
+						</tr>
+						<tr>
+							<td  rowspan="8">Day1</td>
+							<td  rowspan="3">2课时</td>
+							<td rowspan="8">课程</td>
+							<td rowspan="3">movement</td>
+							<td  rowspan="3">
+								1.掌握动作课程教学逻辑<br/>
+								2.掌握一对多教学动作技能<br/>
+								3.课程标准化流程<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td rowspan="3">2课时</td>
+							<td rowspan="3">Burning</td>
+							<td rowspan="3">
+								1.掌握混合体能训练核心要素<br/>
+								2.混合体能计划编写原则<br/>
+								3.理解混合体能定义<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td rowspan="2">4课时</td>
+							<td rowspan="2">BOOM</td>
+							<td rowspan="2">
+								1.掌握循环训练教学技巧<br/>
+								2.循环训练设备运用<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td rowspan="4">Day2</td>
+							<td>4课时</td>
+							<td rowspan="4">表达力/执教力</td>
+							<td>公众表达</td>
+							<td>1.公众表达六大要素</td>
+						</tr>
+						<tr>
+							<td>2课时</td>
+							<td>教学口令</td>
+							<td>1.教学精准口令</td>
+						</tr>
+						<tr>
+							<td rowspan="2">2课时</td>
+							<td rowspan="2">激励与互动</td>
+							<td>1.课程中激励原则
+							</td>
+						</tr>
+						<tr>
+							<td>2.激励话术</td>
+						</tr>
+						<tr>
+							<td rowspan="10">Day3</td>
+							<td rowspan="2">1课时</td>
+							<td rowspan="10">执教力</td>
+							<td rowspan="2">一对多教学模式</td>
+							<td rowspan="2">
+								1.一对多教学模式<br/>
+								2.一对多训练模式<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td rowspan="2">1课时</td>
+							<td rowspan="2">进退阶能力</td>
+							<td rowspan="2">
+								1.训练动作进退阶原则<br/>
+								2.利用速度，杠杆原理，动作模式以及支撑面积调节动作难度<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td rowspan="2">1课时</td>
+							<td rowspan="2">动作纠正能力</td>
+							<td rowspan="2">
+								1.动作矫正要点<br/>
+								2.动作纠正顺序<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td rowspan="2">4课时</td>
+							<td rowspan="2">动作库</td>
+							<td rowspan="2">
+								1.FB八大动作库<br/>
+								2.动作标准<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td rowspan="2">1课时</td>
+							<td rowspan="2">热身与冷身</td>
+							<td rowspan="2">
+								1.热身四大模块<br/>
+								2.心肺，关节，肌肉以及神经系统热身动作<br/>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 
-			<div style="width: 1280px;height: 400px;margin-top: 50px;">
-				<div style="width: 255px;font-size: 32px;color: gray;height: 13%;">
+			<div style="width: 1280px;height: 968px;margin-top: 50px;">
+				<div style="width: 255px;font-size: 32px;color: gray;height: 7%;">
 					<div style="border-bottom: 2px solid gray;height: 60px;width: 100%;text-align: center;">
 						证书介绍
 					</div>
 				</div>
 				<div style="width: 100%;height: 87%;margin-top: 30px;">
-					<div style="float: left;width: 30%;">
-						<img src="../image/certificateimg/certificate1.png" style="width: 100%;height: 100%;">
+					<div style="width: 50%;">
+						<img src="../image/certificateimg/cer1.jpg" style="width: 100%;height: 100%;">
 					</div>
-					<div style="float: left;width: 30%;margin-left: 5%;">
-						<img src="../image/certificateimg/certificate3.jpg" style="width: 100%;height: 100%;">
+					<div style="width: 48%;float:left;">
+						<img src="../image/certificateimg/cer.png" style="width: 100%;height: 100%;">
 					</div>
-					<div style="float: left;width: 30%;margin-left: 5%;">
-						<img src="../image/certificateimg/certificate4.jpg" style="width: 100%;height: 100%;">
+					<div style="width: 50%;float:left;margin-top:5px;">
+						<img src="../image/certificateimg/cer2.png" style="width: 100%;height: 100%;">
 					</div>
 				</div>
 			</div>
-			<div style="width: 1280px;height: 500px;margin-top: 50px;">
-				<div style="width:100%;font-size: 32px;color: gray;height: 13%;">
-					<div style="width: 100%;text-align: left;">
-						讲师简历
+<!--			<div style="width: 1280px;height: 500px;margin-top: 50px;">-->
+<!--				<div style="width:100%;font-size: 32px;color: gray;height: 13%;">-->
+<!--					<div style="width: 100%;text-align: left;">-->
+<!--						讲师简历-->
+<!--					</div>-->
+<!--				</div>-->
+				<section class="section32" id="index_jltd">
+					<div class="content">
+						<div class="g-title">
+							<h2>Coaches<span>讲师简历</span></h2>
+						</div>
+						<div class="box">
+							<div class="item item1 mdiv">
+								<h3>Bruce</h3>
+								<div class="txt1">刘国锋 /</div>
+								<div class="con">
+									<p>CPR急救认证</p>
+									<p>MFT格斗健身认证教练</p>
+									<p>社会体育指导员认证教练</p>
+									<p>NSCA美国国家体能协会认证教练</p>
+									<p>格力公司教授工间操及体能指导</p>
+									<p>国家级运动健将体能训练指导</p>
+								</div>
+							</div>
+							<div class="item item2 mdiv"><img src="../image/guofen.png" alt=""></div>
+							<div class="item item3 mhdiv"><img src="../image/img12-2.jpg" alt=""></div>
+							<div class="item item4 mhdiv">
+								<h3>Frank</h3>
+								<div class="txt1">汪 浩 /</div>
+								<div class="con">
+									<p>私人健康教练/培训师/私教小团体讲师/管理能量课程创始人</p>
+									<p>资格认证:ACE-CPT(美国运动委员会私人教练)</p>
+									<p>NSCA-CPT(美国国家体能协会私人教练)</p>
+									<p>CKI私教小团体培训讲师</p>
+									<p>CFSC功能性认证教练</p>
+									<p>Cross core RPTFMS&L1 认证教练</p>
+									<p>VIPR&L1、L2认证教练</p>
+									<p>足球/高尔夫运动员体能训练师</p>
+									<p>多位影视明星私人教练</p>
+								</div>
+							</div>
+							<div class="item item1 mdiv">
+								<h3>Matin</h3>
+								<div class="txt1">汪洋 /</div>
+								<div class="con">
+									<p>Movnat Level 2 教练证</p>
+									<p>Crossfit Level 1 教练员</p>
+									<p>CPR 急救证书</p>
+									<p>Movnat kids课程指导</p>
+								</div>
+							</div>
+							<div class="item item2 mdiv"><img src="../image/matin.jpg" alt=""></div>
+						</div>
 					</div>
-				</div>
-				<div style="width: 100%;height: 87%;">
-					<img src="../image/1.png" style="width: 100%;height: 100%;">
-				</div>
-			</div>
+				</section>
+<!--			</div>-->
 			<!-- </div> -->
 			<div class="oy-tail-1">
 				<div style="width: 250px;height: 80px;" class="oy-tail-4"></div>
@@ -209,47 +373,51 @@
 	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/slider.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#carousel').carousel({
-				curDisplay: 0, //默认索引
-				autoPlay: false, //是否自动播放
-				interval: 3000 //间隔时间
-			});
-			$('#search').click(function(){
-				var id=$(".cer_input").val();
-				if(id==''||id==undefined||id==null){
-					alert("请填写证书编号！")
-				}else{
-					// var dfd=encodeURI("zscx.html?id="+id)
-					// alert(dfd);
-					// window.location.href="zscx.html?id="+encodeURI(id);
-					 // window.open("zscx.html?id="+id)
-					 JumpPost(id)
+		$(document).ready(function () {
+			$(".mdiv").hover(function () {
+				$(this).css("background-color", "#533c8f");
+				if ($(this).hasClass("item7")) {
+					$('.item10').css("background-color", "#533c8f");
 				}
-			})
-			function JumpPost(id){
-				var data = {}
-				data.id=id
-				jspost("http://djl.free.idcfengye.com/FaceBody/html/zscx.html",data);
-			}
-			function jspost(URL, PARAMS) {
-				var temp = document.createElement("form");
-				temp.action = URL;
-				temp.method = "post";	
-				temp.target = "_blank";
-				temp.style.display = "none";
-				for (var x in PARAMS) {
-				var opt = document.createElement("textarea");
-				opt.name = x;
-				opt.value = PARAMS[x];
-				temp.appendChild(opt);
-				}
-				document.body.appendChild(temp);
-				temp.submit();
-				return temp;
-			}
-		});
 
+				if ($(this).hasClass("item5")) {
+					$('.item6').css("background-color", "#533c8f");
+				}
+
+				if ($(this).hasClass("item2")) {
+					$('.item1').css("background-color", "#533c8f");
+				}
+			}, function () {
+				$(this).css("background-color", "#1e1e1e");
+				if ($(this).hasClass("item7")) {
+					$('.item10').css("background-color", "#1e1e1e");
+				}
+				if ($(this).hasClass("item5")) {
+					$('.item6').css("background-color", "#1e1e1e")
+				}
+				if ($(this).hasClass("item2")) {
+					$('.item1').css("background-color", "#1e1e1e")
+				}
+			});
+
+			$(".mhdiv").hover(function () {
+				$(this).css("background-color", "#533c8f");
+				if ($(this).hasClass("item3")) {
+					$('.item4').css("background-color", "#533c8f");
+				}
+				if ($(this).hasClass("item9")) {
+					$('.item8').css("background-color", "#533c8f");
+				}
+			}, function () {
+				$(this).css("background-color", "#ebebeb");
+				if ($(this).hasClass("item3")) {
+					$('.item4').css("background-color", "#ebebeb");
+				}
+				if ($(this).hasClass("item9")) {
+					$('.item8').css("background-color", "#ebebeb");
+				}
+			});
+		});
 	</script>
 	<script>
 		new Vue({
@@ -258,7 +426,14 @@
 				return {
 					visible: false,
 					images: ['../image/1.png', '../image/4.png', '../image/1.png', '../image/4.png', '../image/1.png',
-						'../image/4.png']
+						'../image/4.png'],
+					id:''
+				}
+			},
+			methods:{
+				cx(){
+					id = window.btoa(window.encodeURIComponent(this.id));
+					window.location.href="http://localhost:63342/FaceBody/html/zscx.html?id="+id;
 				}
 			}
 		})

@@ -1,134 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>证书详情查询</title>
-		<link rel="stylesheet" href="../css/cerficate.css" />
-		<link rel="icon" href="../image/tubiao.png" type="image/x-icon">
-		<link rel="stylesheet" href="../css/index_head.css" />
-		<link rel="stylesheet" href="../css/element-ui.css">
-		<script src="../js/vue.js"></script>
-		<script src="../js/element-ui.js"></script>
-	</head>
-	<body style="margin: 0%;">
-		<div id="app">
-			<div class="oy-head">
-				<div class="oy-head-1">
-					<div class="oy-head-5"></div>
-					<div style="width: 920px;height: 55px;float: right;color: white;"></div>
-					<div style="width: 920px;height: 60px;float: right;">
-						<ul class="oy-head-ul">
-							<li><a href="lxwm.html">Connect<br /><span>联系我们</span></a></li>
-							<li><a href="xwdt.html">News Trends<br /><span>新闻动态</span></a></li>
-							<li><a href="kjcp.html">Technology<br /><span>科技测评</span></a></li>
-							<li><a href="qsntsn.html">Teenager <br /><span>青少年体适能</span></a></li>
-							<li  id="ydxy"><a href="cgzx.html">Venue centre<br /><span>场馆中心</span></a>
-								<div class="oy-head-3">
-									<div><a href="ppjm.html">品牌加盟</a></div>
-									<div><a href="cgzx.html">场馆中心</a></div>
-								</div>
-							</li>
-							<li><a href="ydxy.html">Sports institute<br /><span>运动学院</span></a></li>
-							<li><a href="gywm.html">About<br /><span>关于我们</span></a></li>
-							<li><a href="index.html">Home<br /><span>首页</span></a></li>
-						</ul>
-					</div>
-				</div>
+<head>
+	<meta charset="UTF-8">
+	<title>证书详情查询</title>
+	<link rel="stylesheet" href="../css/cerficate.css" />
+	<link rel="icon" href="../image/tubiao.png" type="image/x-icon">
+	<link rel="stylesheet" href="../css/index_head.css" />
+	<link rel="stylesheet" href="../css/element-ui.css">
+	<script src="../js/vue.js"></script>
+	<script src="../js/element-ui.js"></script>
+</head>
+<body style="margin: 0%;">
+<div id="app">
+	<div class="oy-head">
+		<div class="oy-head-1">
+			<div class="oy-head-5"></div>
+			<div style="width: 920px;height: 55px;float: right;color: white;"></div>
+			<div style="width: 920px;height: 60px;float: right;">
+				<ul class="oy-head-ul">
+					<li><a href="lxwm.html">Connect<br /><span>联系我们</span></a></li>
+					<li><a href="xwdt.html">News Trends<br /><span>新闻动态</span></a></li>
+					<li><a href="kjcp.html">Technology<br /><span>科技测评</span></a></li>
+					<li><a href="qsntsn.html">Teenager <br /><span>青少年体适能</span></a></li>
+					<li  id="ydxy"><a href="cgzx.html">Venue centre<br /><span>场馆中心</span></a>
+						<div class="oy-head-3">
+							<div><a href="ppjm.html">品牌加盟</a></div>
+							<div><a href="cgzx.html">场馆中心</a></div>
+						</div>
+					</li>
+					<li><a href="ydxy.html">Sports institute<br /><span>运动学院</span></a></li>
+					<li><a href="gywm.html">About<br /><span>关于我们</span></a></li>
+					<li><a href="index.html">Home<br /><span>首页</span></a></li>
+				</ul>
 			</div>
-			<div id="container" style="width: 1280px;height:1288px;">
-				<div style="width: 1280px;">
-					<!--				<div style="width: 400px">-->
-					<img src="../image/facebody.jpg" style="width: 1280px">
-					<!--				</div>-->
-				</div>
-				<div class="search" style="width:1280px;margin-top: 30px;height: 138px; ">
-<!--					<div style="position: absolute;left: 40%;">-->
-						<div style="color: gray;font-size: 22px;height: 50px;width: 122px;">证书查询</div>
-						<div style="width: 278px;height: 100px;">
-							<input type="text" placeholder="请输入证书编号" name="crid" class="cer_input" style="width: 218px;height: 39px;border-radius: 51px;border-color: gray;background: url(images/search.png) no-repeat 211px 4px;outline: none;font-size: 16px;padding-left: 33px;">
-<!--						</div>-->
-					</div>
-				</div>
-				<div style="width: 1280px;    height: 678px;">
-					<!--            <img src="images/store1.png">-->
-					<table>
-						<tbody>
-						<tr>
-							<td>姓名:</td>
-							<td>小明</td>
-						</tr>
-						<tr>
-							<td>身份证编号:</td>
-							<td>455561652584815</td>
-						</tr>
-						<tr>
-							<td>证书类型:</td>
-							<td>L1</td>
-						</tr>
-						<tr>
-							<td>培训机构:</td>
-							<td>颜身</td>
-						</tr>
-						<tr>
-							<td>发证时间:</td>
-							<td>2020-01-23</td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-
-
-
-			<div class="oy-tail-1">
-				<div style="width: 250px;height: 80px;" class="oy-tail-4"></div>
-				<div class="oy-tail-2">
-					<div>
-						<img src="../image/gongzhonghao.jpg" style="float: left;width: 100%;height: 128px;">
-						FaceBody公众号
-					</div>
-					<div>
-						<img src="../image/kefu.png" style="float: left;width: 100%;height: 128px;">
-						FaceBody客服
-					</div>
-					<div>
-						<img src="../image/xiaochengxu.jpg" style="float: left;width: 100%;height: 128px;">
-						FaceBody小程序
-					</div>
-					<div>
-						<img src="../image/jiaruwomen.png" style="float: left;width: 100%;height: 128px;">
-						加入我们
-					</div>
-				</div>
-				<div class="oy-tail-3">
-					©2020上海颜深健康管理咨询有限公司版权所有 &nbsp;&nbsp; 沪ICP备17039488号-1&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702007998"
-					 style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color: white;"><img src="../image/beian.png" style="float:left;" />
-						沪公网安备 31011702007998号
-					</a>
+		</div>
+	</div>
+	<div id="container" style="width: 1280px;">
+		<div style="width: 1280px;">
+			<!--				<div style="width: 400px">-->
+			<img src="../image/facebody.jpg" style="width: 1280px">
+			<!--				</div>-->
+		</div>
+		<div class="search" style="width: 1280px;height: 178px;margin-top: 20px;">
+			<div>
+				<div style="color: gray;font-size: 22px;height: 50px;width: 100px;">证书查询</div>
+				<div style="width: 400px;height: 100px;text-align: center;    position: relative;">
+					<input type="text" placeholder="请输入证书编号"  name="crid" class="cer_input" style="width: 218px;    position: relative;height: 39px;border-radius: 51px;border-color: gray;outline: none;font-size: 16px;padding-left: 33px;">
+					<img src="../image/search.png" style="position: absolute;left: 277px;top: 7px;" id="search">
 				</div>
 			</div>
 		</div>
-	</body>
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/slide.min.js"></script>
-	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				var url = window.location.href;
-				截取 url中的“=”,获得“=”后面的参数
-				var seachTxt = url.split("=");
-				alert("url")
-			})
-		</script>
-		<script>
-			new Vue({
-				el: '#app',
-				data: function() {
-					return {
-						visible: false,
-						images: ['../image/facebody.jpg', '../image/facebody2.jpg', '../image/facebody3.jpg']
-					}
+		<div style="width: 1280px;">
+			<table  id="table" style="display: none">
+				<tbody>
+				<tr>
+					<td>姓名:</td>
+					<td><input id="name" type="text" readonly="readonly" style="border: none;color: gray;font-size: 15px;outline: none;"></td>
+				</tr>
+				<tr>
+					<td>身份证编号:</td>
+					<td><input id="id" type="text" readonly="readonly" style="border: none;color: gray;font-size: 15px;outline: none;"></td>
+				</tr>
+				<tr>
+					<td>证书名称:</td>
+					<td><input id="cername" type="text" readonly="readonly" style="border: none;color: gray;font-size: 15px;outline: none;"></td>
+				</tr>
+				<tr>
+					<td>证书类型:</td>
+					<td><input id="level" type="text" readonly="readonly" style="border: none;color: gray;font-size: 15px;outline: none;"></td>
+				</tr>
+				<tr>
+					<td>培训机构:</td>
+					<td><input id="company" type="text" readonly="readonly" style="border: none;color: gray;font-size: 15px;outline: none;"></td>
+				</tr>
+				<tr>
+					<td>发证时间:</td>
+					<td><input id="time" type="text" readonly="readonly" style="border: none;color: gray;font-size: 15px;outline: none;"></td>
+				</tr>
+				</tbody>
+			</table>
+			<div id="nodata" style="width: 197px;height: 183px;display: none" >
+				<img src="../image/nodata.png">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="oy-tail-1">
+		<div style="width: 250px;height: 80px;" class="oy-tail-4"></div>
+		<div class="oy-tail-2">
+			<div>
+				<img src="../image/gongzhonghao.jpg" style="float: left;width: 100%;height: 128px;">
+				FaceBody公众号
+			</div>
+			<div>
+				<img src="../image/kefu.png" style="float: left;width: 100%;height: 128px;">
+				FaceBody客服
+			</div>
+			<div>
+				<img src="../image/xiaochengxu.jpg" style="float: left;width: 100%;height: 128px;">
+				FaceBody小程序
+			</div>
+			<div>
+				<img src="../image/jiaruwomen.png" style="float: left;width: 100%;height: 128px;">
+				加入我们
+			</div>
+		</div>
+		<div class="oy-tail-3">
+			©2020上海颜深健康管理咨询有限公司版权所有 &nbsp;&nbsp; 沪ICP备17039488号-1&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702007998"
+																				style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color: white;"><img src="../image/beian.png" style="float:left;" />
+			沪公网安备 31011702007998号
+		</a>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/slide.min.js"></script>
+
+<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var id = window.decodeURIComponent(window.atob(getUrlParam("id")))
+		search(id);
+
+		$("#search").click(function () {
+			var data=$(".cer_input").val();
+			search(data)
+		})
+	})
+	function search(id){
+		$(".cer_input").val(id)
+		$.ajax({
+			type: "POST",
+			url: "https://www.facebodyfitness.com/hi/main?hi=24CQRLLPES0F",
+			data: {
+				"id": id
+			},
+			contentType:"application/x-www-form-urlencoded",
+			dataType:"json",
+			success:function(data){
+				if(data.total>0){
+					$("#name").val(data.rows[0].mname)
+					$("#id").val(data.rows[0].memberid)
+					$("#cername").val(data.rows[0].cername)
+					$("#level").val(data.rows[0].cerlevel)
+					$("#company").val(data.rows[0].company)
+					$("#time").val(data.rows[0].createdate)
+					$("#table").css('display','block');
+					$("#nodata").css('display','none');
+				}else{
+					$("#nodata").css('display','block');
+					$("#table").css('display','none');
 				}
-			})
-		</script>
+			},
+			error:function(error){
+				console.log(error)
+			}
+		});
+	}
+
+	function getUrlParam(id) {
+		var reg = new RegExp("(^|&)" + id + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+		var r = window.location.search.substr(1).match(reg); //匹配目标参数
+		if (r != null) return unescape(r[2]); return null; //返回参数值
+	}
+</script>
+<script>
+	new Vue({
+		el: '#app',
+		data: function() {
+			return {
+				visible: false,
+				images: ['../image/facebody.jpg', '../image/facebody2.jpg', '../image/facebody3.jpg']
+			}
+		},
+		methods:{
+			getUrlParam(id) {
+				var reg = new RegExp("(^|&)" + id + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+				var r = window.location.search.substr(1).match(reg); //匹配目标参数
+				if (r != null) return unescape(r[2]); return null; //返回参数值
+			}
+		},
+		// created() {
+		// 	var id = window.decodeURIComponent(window.atob(this.getUrlParam("id")))
+		// 	this.$axios.post('https://www.facebodyfitness.com/hi/main?hi=24CQRLLPES0F', this.$qs.stringify(id), {headers: {'Content-Type':'application/x-www-form-urlencoded'}}).then((res)=>{
+		// 		console.log(res)
+		// 	})
+		// }
+	})
+</script>
 </html>
