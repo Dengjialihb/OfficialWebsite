@@ -1,9 +1,14 @@
 .oy-gy-1{
 	width: 1280px;
-	height: 500px;
-	background-image: url(../image/facebody.jpg);
+	height: 650px;
+	background-image: url(https://res.facebodyfitness.com/onlinevideo/img/facebody.jpg);
 	background-size: 100% 100%;
 	margin-top: 2px;
+}
+.oy-gy-1 { width: 100%;  }
+@media screen and (max-width: 1000px)
+{
+.oy-gy-1 { width:1280px; }
 }
 body div {
 	margin: 0 auto;

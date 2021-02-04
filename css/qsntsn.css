@@ -1,9 +1,14 @@
 .oy-tsn-1{
 	width:1280px;
-	height: 500px;
-	background-image: url(../image/facebody.jpg);
+	height: 650px;
+	background-image: url(https://res.facebodyfitness.com/onlinevideo/img/tsn8.jpg);
 	background-size: 100% 100%;
 	margin-top: 2px;
+}
+.oy-tsn-1 { width: 100%;  }
+@media screen and (max-width: 1000px)
+{
+.oy-tsn-1 { width:1280px; }
 }
 .oy-tsn-2{
 	width: 1280px;
@@ -16,7 +21,7 @@
 }
 .oy-tsn-3{
 	width: 1280px;
-	height: 1200px;
+	height: 400px;
 	margin-top: 50px;
 }
 .oy-tsn-3 div{
@@ -28,10 +33,12 @@
 	transform:scale3d(1.2, 1.2, 1);
 }
 .oy-tsn-3 img{
-	width: 100%;
+	width: 25%;
 	height: 400px;
+	float: left;
 	transition:all 1.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 .oy-tsn-3 div:hover{
 	background: #878383;
+	color: white!important;
 }

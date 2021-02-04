@@ -204,7 +204,7 @@ textarea { height: auto; min-height: 120px; border: #eee 1px solid; border-radiu
 
 .bannerAd { width: 100%; height: 472px; }
 
-.bannerAd a { display: block; width: 100%; height: 100%; background: url("../images/banner11.jpg") center center no-repeat; }
+.bannerAd a { display: block; width: 100%; height: 100%; background: url("https://res.facebodyfitness.com/onlinevideo/imgs/banner11.jpg") center center no-repeat; }
 
 .banner { height: 852px; overflow: hidden; width: 100%; position: relative; }
 
@@ -218,7 +218,7 @@ textarea { height: auto; min-height: 120px; border: #eee 1px solid; border-radiu
 
 .banner .bd { position: relative; height: 100%; z-index: 0; }
 
-.banner .bd li { zoom: 1; vertical-align: middle; width: 100%; height: 852px; background: url("../images/banner1.jpg") center top no-repeat; background-size: auto 852px; }
+.banner .bd li { zoom: 1; vertical-align: middle; width: 100%; height: 852px; background: url("https://res.facebodyfitness.com/onlinevideo/imgs/banner1.jpg") center top no-repeat; background-size: auto 852px; }
 
 .banner .bd img { width: 100%; height: 852px; display: block; }
 
