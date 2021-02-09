@@ -23,7 +23,10 @@
 	margin-left: 95px;
 	margin-top: 50px;
 	font-size: 14px;
-	background: #523d95;
+	background: #523d958a;
+}
+.oy-body-2 div:hover{
+	background:#523d95;	
 }
 .oy-body-2 div a{
 	text-decoration: none;
