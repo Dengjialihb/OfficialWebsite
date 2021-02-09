@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,intial-scale=0,maximum-scale=0,user-scalable=yes,shrink-to-fit=no">
 		<title>运动学院</title>
 		<link rel="stylesheet" href="css/cerficate.css">
 <!--		<link rel="stylesheet" href="css/main.css">-->
@@ -11,8 +12,9 @@
 		<script src="js/element-ui.js"></script>
 		<link rel="icon" href="https://res.facebodyfitness.com/onlinevideo/img/tubiao.png" type="image/x-icon">
 	</head>
-	<body style="margin: 0%;">
+	<body style="margin: 0%;background-color: #80808014;">
 		<div id="app">
+			
 			<div class="oy-head">
 				<div class="oy-head-1">
 					<div class="oy-head-5"></div>
@@ -22,11 +24,10 @@
 							<li><a href="lxwm.html">Connect<br /><span>联系我们</span></a></li>
 							<li><a href="xwdt.html">News Trends<br /><span>新闻动态</span></a></li>
 							<li><a href="kjcp.html">Technology<br /><span>科技测评</span></a></li>
-							<li><a href="qsntsn.html">Teenager <br /><span>青少年体适能</span></a></li>
+							<li><a href="cgzx.html">场馆中心</a></li>
 							<li  id="ydxy">Venue centre<br /><span>场馆中心</span>
 								<div class="oy-head-3">
-									<div><a href="ppjm.html">品牌加盟</a></div>
-									<div><a href="cgzx.html">场馆中心</a></div>
+									<div></div>
 								</div>
 							</li>
 							<li><a href="ydxy.html">Sports institute<br /><span>运动学院</span></a></li>
@@ -41,59 +42,48 @@
 			</div>
 			<div class="search" style="width: 1280px;height: 178px;margin-top: 20px;">
 				<div>
-					<div style="color: gray;font-size: 22px;height: 50px;width: 100px;">证书查询</div>
+					<div style="color: rgb(169, 169, 169);font-size: 22px;height: 50px;width: 100px;">证书查询</div>
 					<div style="width: 400px;height: 100px;text-align: center;    position: relative;">
 						<input type="text" placeholder="请输入证书编号" v-model="id" name="crid" class="cer_input" style="width: 218px;    position: relative;height: 39px;border-radius: 51px;border-color: gray;outline: none;font-size: 16px;padding-left: 33px;">
 						<img src="https://res.facebodyfitness.com/onlinevideo/img/search.png" style="position: absolute;left: 277px;top: 7px;" id="search" @click="cx">
 					</div>
 				</div>
 			</div>
-			<div style="width: 1100px;height: 1000px;">
-				<div style="width: 255px;font-size: 32px;color: gray;height:100px;">
-					<div style="border-bottom: 2px solid gray;height: 60px;width:100%;text-align: center;">
+			<div style="width: 1280px;height: 652px;">
+				<div style="width: 255px;font-size: 30px;color: #666666;">
+					<div style="border-bottom: 2px solid #666666;height: 60px;width:100%;text-align: center;">
 						运动学院简介
 					</div>
 				</div>
-				<div style="width: 100%;">
-					<div style="width: 100%;line-height: 34px;background: white;">
-						<div>颜身运动学院是颜身运动旗下品牌，成立于2017年9月<br/>是我国最早自主研发私教小团课体系的学院之一，学院构架两院（运动学院、商学院）三系（私教小团体系、运动营养学系、运营管理系）组成。<br/>
-							颜身运动学院拥有丰富的创始底蕴，创始团队留学回国发现中国健身行业仍处在启蒙阶段，为宣传和发扬小团私教体系，创办了国内最早的小团课颜身运动学院，走在私教小团课体系的领域前沿，密切关注行业国际动态，不断研发引领市场潮流的新课程，创立出四大运动体系，为各大健身运营者开拓新思路，目前是行业内运动体系最具影响力的培训机构。秉持着“让一亿中国人每周健身两次”的使命，为中国健身行业培育出一批又一批的优秀教练。
+				<div style="width: 1280px;height: 724px;">
+					<div style="width: 1280px;height: 444px;    background-color: white;">
+						<div style="width: 46%;float: left;margin-left: 154px;height: 353px;">
+						<img src="images/schoollogo.png" style="float: left">
+						</div>
+						<div style="width:430px;color: rgb(169, 169, 169);float: left;font-size:14px;margin-top: 68px;">
+							<div>颜身运动学院是颜身运动旗下品牌，成立于2017年9月<br/><br/>是我国最早自主研发私教小团课体系的学院之一，学院构架两院（运动学院、商学院）三系（私教小团体系、运动营养学系、运营管理系）组成。<br/><br/>
+								颜身运动学院拥有丰富的创始底蕴，创始团队留学回国发现中国健身行业仍处在启蒙阶段，为宣传和发扬小团私教体系，创办了国内最早的小团课颜身运动学院，走在私教小团课体系的领域前沿，密切关注行业国际动态，不断研发引领市场潮流的新课程，创立出四大运动体系，为各大健身运营者开拓新思路，目前是行业内运动体系最具影响力的培训机构。<br/><br/>
+								秉持着“让一亿中国人每周健身两次”的使命，为中国健身行业培育出一批又一批的优秀教练。
+							</div>
 						</div>
 					</div>
-					<div style="width: 100%;    margin-top: 32px;height: 50%;">
-						<div style="float: left;width: 67%">
-						<img src="https://res.facebodyfitness.com/onlinevideo/img/college1.jpg" style="width: 100%;height: 100%;float: left">
-						</div>
-<!--						<div style="    background: #ffffff91;position: absolute;width: 100%;bottom: 4px;height: 30%;">文字文字</div>-->
-						<div style="float: left;    width: 32%;margin-left: 6px;">
-								<img src="https://res.facebodyfitness.com/onlinevideo/img/college2.jpg" style="width: 366px;height: 100%;">
-								<img src="https://res.facebodyfitness.com/onlinevideo/img/college3.jpg" style="width: 365px;height: 100%;">
-						</div>
+					<div style="width: 1280px;height:100px;    margin-top: 55px;">
+						<div class="boxone1" style="margin-left: 38px; ">小团体私教</div>
+						<div class="boxone1" style="    margin-left: 300px;">营养补剂</div>
+						<div class="boxone1" style="    margin-left: 300px;">青少年体适能</div>
 					</div>
-				</div>
-
+			</div>
 			</div>
 
-			<div style="width: 1280px;height: 650px;margin-top: 50px;">
-				<div style="width: 255px;font-size: 32px;color: gray;height:13%;">
-					<div style="border-bottom: 2px solid gray;height: 60px;width:100%;text-align: center;">
-						运动学院资质
-					</div>
-				</div>
-				<el-carousel :interval="4000" type="card" height="400px" style="margin-top: 20px;">
-					<el-carousel-item v-for="(image,index) in images" :key="index">
-						<img :src="image" style="width: 100%;height: 400px;" />
-					</el-carousel-item>
-				</el-carousel>
-			</div>
+
 			<section class="section31" id="home_kctd">
 			<div style="width: 1280px;height:1038px;margin-top: 50px;">
 				<div class="g-title">
-					<h2>Workout<span>课程简介</span></h2>
+					<h2>课程简介<span></span></h2>
 				</div>
+				<div style="    background-color: white;width: 1280px; height: 800px;">
 				<div class="video_div">
 					<div class="video_text">
-						<span style="    font-size: 29px;">Sports philosophy</span><br/>
 						<span style="    font-size: 25px;">运动哲学</span><br/><br/><br/>
 						<span>人的运动能力与生俱来，<br/>
 								现代生活没有运动机会才逐渐忘记了运动技能，<br/>
@@ -105,160 +95,16 @@
 				<div class="video_div">
 					<img src="https://res.facebodyfitness.com/onlinevideo/img/kecheng.png" style="float:left;width: 503px">
 					<div class="video_text_one">
-						<span  style="    font-size: 29px;">Courses system</span><br/>
 						<span style="    font-size: 25px;">课程体系</span><br/><br/><br/>
 						<span >根据人体运动学习能力，<br/>
 								我们将课程分为了4大类，<br/>
 							来逐步培训提高你的运动能力</span>
 					</div>
 				</div>
-<!--				<div style="width: 255px;font-size: 32px;color: gray;height:100px;">-->
-<!--					<div style="border-bottom: 2px solid gray;height: 60px;width:100%;text-align: center;">-->
-<!--						课程简介-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div style="float: left;width: 50%;">-->
-<!--					<div style="float: right;width: 80%;height: 50%;margin-right: 96px;">-->
-<!--						<img src="https://res.facebodyfitness.com/onlinevideo/img/1.png" style="margin-top: 110px;width: 100%;height: 100%;">-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div style="float: left;width: 35%;height: 500px;background: white;">-->
-<!--					<div>文本</div>-->
-<!--				</div>-->
+				</div>
 			</div>
 			</section>
 
-			<div style="width: 1280px;margin-top: 50px;">
-				<div style="width: 255px;font-size: 32px;color: gray;height: 120px;">
-					<div style="border-bottom: 2px solid gray;height: 60px;width: 100%;text-align: center;">
-						日程安排
-					</div>
-				</div>
-				<div style="width: 1280px;">
-					<table id="ytable">
-						<tbody>
-						<tr>
-							<td>日期</td>
-							<td>课时</td>
-							<td>培训主题</td>
-							<td>具体内容</td>
-							<td>学习目标</td>
-						</tr>
-						<tr>
-							<td  rowspan="8">Day1</td>
-							<td  rowspan="3">2课时</td>
-							<td rowspan="8">课程</td>
-							<td rowspan="3">movement</td>
-							<td  rowspan="3">
-								1.掌握动作课程教学逻辑<br/>
-								2.掌握一对多教学动作技能<br/>
-								3.课程标准化流程<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-							<td rowspan="3">2课时</td>
-							<td rowspan="3">Burning</td>
-							<td rowspan="3">
-								1.掌握混合体能训练核心要素<br/>
-								2.混合体能计划编写原则<br/>
-								3.理解混合体能定义<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-							<td rowspan="2">4课时</td>
-							<td rowspan="2">BOOM</td>
-							<td rowspan="2">
-								1.掌握循环训练教学技巧<br/>
-								2.循环训练设备运用<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-							<td rowspan="4">Day2</td>
-							<td>4课时</td>
-							<td rowspan="4">表达力/执教力</td>
-							<td>公众表达</td>
-							<td>1.公众表达六大要素</td>
-						</tr>
-						<tr>
-							<td>2课时</td>
-							<td>教学口令</td>
-							<td>1.教学精准口令</td>
-						</tr>
-						<tr>
-							<td rowspan="2">2课时</td>
-							<td rowspan="2">激励与互动</td>
-							<td>1.课程中激励原则
-							</td>
-						</tr>
-						<tr>
-							<td>2.激励话术</td>
-						</tr>
-						<tr>
-							<td rowspan="10">Day3</td>
-							<td rowspan="2">1课时</td>
-							<td rowspan="10">执教力</td>
-							<td rowspan="2">一对多教学模式</td>
-							<td rowspan="2">
-								1.一对多教学模式<br/>
-								2.一对多训练模式<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-							<td rowspan="2">1课时</td>
-							<td rowspan="2">进退阶能力</td>
-							<td rowspan="2">
-								1.训练动作进退阶原则<br/>
-								2.利用速度，杠杆原理，动作模式以及支撑面积调节动作难度<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-							<td rowspan="2">1课时</td>
-							<td rowspan="2">动作纠正能力</td>
-							<td rowspan="2">
-								1.动作矫正要点<br/>
-								2.动作纠正顺序<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-							<td rowspan="2">4课时</td>
-							<td rowspan="2">动作库</td>
-							<td rowspan="2">
-								1.FB八大动作库<br/>
-								2.动作标准<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-							<td rowspan="2">1课时</td>
-							<td rowspan="2">热身与冷身</td>
-							<td rowspan="2">
-								1.热身四大模块<br/>
-								2.心肺，关节，肌肉以及神经系统热身动作<br/>
-							</td>
-						</tr>
-						<tr>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
 
 			<div style="width: 1280px;height: 968px;margin-top: 50px;">
 				<div style="width: 255px;font-size: 32px;color: gray;height: 7%;">
@@ -266,7 +112,7 @@
 						证书介绍
 					</div>
 				</div>
-				<div style="width: 100%;height: 87%;margin-top: 30px;">
+				<div style="width: 100%;height: 87%;margin-top: 30px; background-color: white;">
 					<div style="width: 50%;">
 						<img src="https://res.facebodyfitness.com/onlinevideo/img/cer1.jpg" style="width: 100%;height: 100%;">
 					</div>
@@ -288,24 +134,10 @@
 				<section class="section32" id="index_jltd">
 					<div class="content">
 						<div class="g-title">
-							<h2>Coaches<span>讲师简历</span></h2>
+							<h2>讲师简历<span></span></h2>
 						</div>
 						<div class="box">
 							<div class="item item1 mdiv">
-								<h3>Bruce</h3>
-								<div class="txt1">刘国锋 /</div>
-								<div class="con">
-									<p>CPR急救认证</p>
-									<p>MFT格斗健身认证教练</p>
-									<p>社会体育指导员认证教练</p>
-									<p>NSCA美国国家体能协会认证教练</p>
-									<p>格力公司教授工间操及体能指导</p>
-									<p>国家级运动健将体能训练指导</p>
-								</div>
-							</div>
-							<div class="item item2 mdiv"><img src="https://res.facebodyfitness.com/onlinevideo/img/guofen.png" alt=""></div>
-							<div class="item item3 mhdiv"><img src="https://res.facebodyfitness.com/onlinevideo/img/img12-2.jpg" alt=""></div>
-							<div class="item item4 mhdiv">
 								<h3>Frank</h3>
 								<div class="txt1">汪 浩 /</div>
 								<div class="con">
@@ -320,7 +152,21 @@
 									<p>多位影视明星私人教练</p>
 								</div>
 							</div>
-							<div class="item item1 mdiv">
+							<div class="item item2 mdiv"><img src="images/wanhao.jpg" alt=""></div>
+							<div class="item item3 mhdiv"><img src="images/guofeng.jpg" alt=""></div>
+							<div class="item item4 mhdiv">
+								<h3>Bruce</h3>
+								<div class="txt1">刘国锋 /</div>
+								<div class="con">
+									<p>CPR急救认证</p>
+									<p>MFT格斗健身认证教练</p>
+									<p>社会体育指导员认证教练</p>
+									<p>NSCA美国国家体能协会认证教练</p>
+									<p>格力公司教授工间操及体能指导</p>
+									<p>国家级运动健将体能训练指导</p>
+								</div>
+							</div>
+							<div class="item item11 mdiv">
 								<h3>Matin</h3>
 								<div class="txt1">汪洋 /</div>
 								<div class="con">
@@ -330,7 +176,7 @@
 									<p>Movnat kids课程指导</p>
 								</div>
 							</div>
-							<div class="item item2 mdiv"><img src="https://res.facebodyfitness.com/onlinevideo/img/matin.jpg" alt=""></div>
+							<div class="item item22 mdiv"><img src="images/mading.jpg" alt=""></div>
 						</div>
 					</div>
 				</section>
@@ -385,6 +231,9 @@
 				if ($(this).hasClass("item2")) {
 					$('.item1').css("background-color", "#533c8f");
 				}
+				if ($(this).hasClass("item22")) {
+					$('.item11').css("background-color", "#533c8f");
+				}
 			}, function () {
 				$(this).css("background-color", "#1e1e1e");
 				if ($(this).hasClass("item7")) {
@@ -395,6 +244,9 @@
 				}
 				if ($(this).hasClass("item2")) {
 					$('.item1').css("background-color", "#1e1e1e")
+				}
+				if ($(this).hasClass("item22")) {
+					$('.item11').css("background-color", "#1e1e1e")
 				}
 			});
 
