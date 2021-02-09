@@ -20,80 +20,25 @@ body{
 }
 .oy-head-ul{
 	float: right;
-	width: 1280px;
-	float: right;
 	margin-right: 20px;
-	z-index: 99;
+	height: 30px;
 }
 .oy-head-ul li{
 	list-style: none;
 	float: right;
-	margin-left:30px;
-	text-align: center;
-	
+	margin-left:40px;
 }
 .oy-head-ul li a{
 	text-decoration: none;
 	font-size: 16px;
 	color: white;
-	font-family: inherit;
-	
-}
-.oy-head-ul li {
-	text-decoration: none;
-	font-size: 16px;
-	color: white;
-	font-family: inherit;
-	
-}
-.oy-head-ul li a span{
-	font-size: 14px;
-	color: #989494;
-}
-.oy-head-ul li span{
-	font-size: 14px;
-	color: #989494;
+	line-height: 60px!important;
 }
 
-.oy-head-ul li a:visited{
-	text-decoration:none;
-}
-.oy-head-3{
-	width:100px;
-	height: 40px;
-	background: white;
-	position: absolute;
-	display: none;
-	z-index: 999;
-}
-.oy-head-3 div a{
-	font-size: 14px;
-}
-.oy-head-3 div{
-	width:100px;
-	height:20px;
-	text-align: center;
-	line-height: 20px;
-	float: left;
-}
-.oy-head-3 div :hover{
-	background: #989494;
-}
-
-.oy-head-3 div a{
-	color: black;
-}
-#ydxy:hover .oy-head-3{
-	display: block;
-}
 .oy-head-5{
 	float: left;
 	width: 360px;
 	height: 115px;
-	background-image: url(https://res.facebodyfitness.com/onlinevideo/img/logo.png);
-	background-repeat:no-repeat;
-	background-position:0px 33px; 
-	background-size: 95% 50%;
 }
 .oy-tail-1{
 	height: 290px;
@@ -133,4 +78,5 @@ body{
 	text-align: center;
 	color: white;
 	margin-top:10px;
+	font-size: 12px;
 }

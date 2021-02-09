@@ -14,7 +14,7 @@
 	margin-top: 2px;
 }
 .oy-body-2 div{
-	border-radius: 5px;
+	border-radius: 10px;
 	width: 200px;
 	height: 100px;
 	float: left;
@@ -23,27 +23,32 @@
 	margin-left: 95px;
 	margin-top: 50px;
 	font-size: 14px;
+	background: #523d95;
+}
+.oy-body-2 div a{
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: bolder;
+	color: white;
 }
 .oy-body-2 div:hover{
 	cursor: pointer;
 }
 .oy-body-3{
 	width: 1280px;
-	height: 600px;
+	height: 650px;
 	margin-top: 2px;
 }
 .oy-body-3 div{
 	width: 1280px;
-	height: 300px;
 	text-align: left;
-	font-size: 20px;
-	color: #5B5959;
-	
+	font-size: 14px;
+	color: rgb(171, 171, 171);
 }
 .oy-body-4{
 	width: 1280px;
 	height: 80px;
-	margin-top: 130px;
+	margin-top: 50px;
 	font-size: 40px;
 	text-align: center;
 	line-height: 80px;
