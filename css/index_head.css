@@ -13,7 +13,7 @@ body{
 	height: 115px;
 	background-color: #523d95;
 }
-.oy-head { width:100%; }
+.oy-head { width:100%;  }
 @media screen and (max-width: 1000px)
 {
 .oy-head { width:1480px; }

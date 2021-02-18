@@ -22,6 +22,7 @@
 {
 .oy-lx-2 { width:2040px; }
 }
+.oy-lx-2 { width: 1980px;  }
 @media screen and (max-width: 1000px)
 {
 .oy-lx-2 { width:1280px; }
