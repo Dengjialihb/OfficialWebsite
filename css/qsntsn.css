@@ -1,10 +1,9 @@
 .oy-tsn-1{
-	width:1280px;
 	height:852px;
 	margin-top: 2px;
 }
 
-.oy-tsn-1 { width: 1920px  }
+.oy-tsn-1 { width: 1903px  }
 @media screen and (min-width: 2040px) { 
 .oy-tsn-1 { width:2040px; }
 }
