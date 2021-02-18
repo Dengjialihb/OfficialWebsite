@@ -87,16 +87,12 @@ ul, li, ol { list-style: none; line-height: normal; }
     letter-spacing: 3px;
     line-height: 27px;
 }
-.video_div .video-bg{
-    width: 64%;
-    float: left;
-}
+
 .video_text{
-    width: 348px;
+    width: 294px;
     float: left;
     height: 344px;
     color: rgb(169, 169, 169);
-    margin: 112px 51px 0px 42px;
 }
 .video_text_one{
     width: 348px;
@@ -402,13 +398,14 @@ input:hover[type=text], input:hover[type=password], select:hover, textarea:hover
 
 .content { width: 1280px; margin-left: auto; margin-right: auto; }
 
-/*.ydxy-1 { width:100%;  }*/
-/*@media screen and (max-width: 1000px)*/
-/*{*/
-/*.ydxy-1 { width:1280px; }*/
-/*}*/
-/*.cgzx-1 { width:100%;  }*/
-/*@media screen and (max-width: 1000px)*/
-/*{*/
-/*.cgzx-1 { width:1280px; }*/
-/*}*/
+.ydxy-1 { width:1920px;  }
+@media screen and (max-width: 1000px)
+{
+.ydxy-1 { width:1280px; }
+}
+.cgzx-1 { width:1920px;  }
+@media screen and (max-width: 1000px)
+{
+.cgzx-1 { width:1280px; }
+}
+
