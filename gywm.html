@@ -9,13 +9,15 @@
 		<link rel="stylesheet" href="css/element-ui.css">
 		<script src="js/vue.js"></script>
 		<script src="js/element-ui.js"></script>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/jquery.min.js"></script>
 	</head>
 	<body style="margin: 0%;">
 		<div id="app">
 			<div class="oy-head">
 				<div class="oy-head-1">
 					<div class="oy-head-5">
-						<img src="https://res.facebodyfitness.com/onlinevideo/img/20210209100255.png" style="width: 100%;height: 100%;"/>
+						<img src="https://res.facebodyfitness.com/onlinevideo/img/20210209100255.png" style="width: 100%;height: 100%;" />
 					</div>
 					<div style="width: 920px;height: 55px;float: right;color: white;"></div>
 					<div style="width: 920px;height: 60px;float: right;">
@@ -31,7 +33,16 @@
 				</div>
 			</div>
 			<div class="oy-gy-1">
-
+				<p style="margin-top: 200px;float: left;margin-left: 150px;">
+					<span style="font-size: 40px;font-weight: 500;color: #F2C81F;" id="gy4">
+					</span>
+					<span style="font-size: 40px;font-weight: 500;color: white;">人次在此运动</span>
+					<br /><br />
+					<span style="font-size: 19px;font-weight: 500;color: white;">每天都有FBer在这里收获新改变新生活</span>
+				</p>
+				<div style="position: relative;top:250px;left: 100px;" id="gy1" class="gywm1"></div>
+				<div style="position: relative;top:350px;left: 350px;" id="gy2" class="gywm2"></div>
+				<div style="position: relative;top:450px;left: -100px;" id="gy3" class="gywm3"></div>
 			</div>
 			<div style="width: 1280px;height: 50px;margin-top: 50px;">
 				<div style="font-weight: 450;font-size: 36px;">公司简介</div>
@@ -179,8 +190,9 @@
 					</div>
 				</div>
 				<div class="oy-tail-3">
-					©2020上海颜深健康管理咨询有限公司版权所有<a href="https://beian.miit.gov.cn" style="display:inline-block;color: white;	text-decoration:none;margin-left: 20px;">沪ICP备17039488号-2</a><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702007998"
-					 style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color: white;margin-left: 20px;"><img src="https://res.facebodyfitness.com/onlinevideo/img/beian.png" style="float:left;" />
+					©2020上海颜深健康管理咨询有限公司版权所有<a href="https://beian.miit.gov.cn" style="display:inline-block;color: white;	text-decoration:none;margin-left: 20px;">沪ICP备17039488号-2</a><a
+					 target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702007998" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color: white;margin-left: 20px;"><img
+						 src="https://res.facebodyfitness.com/onlinevideo/img/beian.png" style="float:left;" />
 						沪公网安备 31011702007998号
 					</a>
 				</div>
@@ -193,8 +205,15 @@
 			data: function() {
 				return {
 					visible: false,
-					images: ['https://res.facebodyfitness.com/onlinevideo/img/798465149874432456.jpg', 'https://res.facebodyfitness.com/onlinevideo/img/7843465846.jpg', 'https://res.facebodyfitness.com/onlinevideo/img/876554652354.jpg', 'https://res.facebodyfitness.com/onlinevideo/img/7894546523.jpg'],
-					images2: ['https://res.facebodyfitness.com/onlinevideo/img/9144c48e-8a94-4337-9589-d9d096e3af39.png','https://res.facebodyfitness.com/onlinevideo/img/pinpaijianjie2.jpg','https://res.facebodyfitness.com/onlinevideo/img/pinpaijianjie3.jpg'],
+					images: ['https://res.facebodyfitness.com/onlinevideo/img/798465149874432456.jpg',
+						'https://res.facebodyfitness.com/onlinevideo/img/7843465846.jpg',
+						'https://res.facebodyfitness.com/onlinevideo/img/876554652354.jpg',
+						'https://res.facebodyfitness.com/onlinevideo/img/7894546523.jpg'
+					],
+					images2: ['https://res.facebodyfitness.com/onlinevideo/img/9144c48e-8a94-4337-9589-d9d096e3af39.png',
+						'https://res.facebodyfitness.com/onlinevideo/img/pinpaijianjie2.jpg',
+						'https://res.facebodyfitness.com/onlinevideo/img/pinpaijianjie3.jpg'
+					]
 				}
 			},
 			methods: {
@@ -251,9 +270,78 @@
 							}, 17100)
 					}
 				},
+				fun2() {
+					$.ajax({
+						type: "POST",
+						url: "https://www.facebodyfitness.com/hi/main?hi=24AVKXN10WJS",
+						success: function(res) {
+							var dataObj = eval("(" + res + ")")
+							var i = 0
+							setInterval(function() {
+								setTimeout(function() {
+										document.getElementById("gy1").innerHTML = '<img src="' + dataObj.rows[i].imgs + '"/>' + '<span>' +
+											dataObj.rows[i].name + '</span>' + '<span2>刚上了一节' + dataObj.rows[i].kc + '</span2>'
+										i++
+										if (i == dataObj.rows.length) {
+											i = 0
+										}
+										$("#gy1").css('animation', 'rainbow 3s forwards')
+										setTimeout(function() {
+											$("#gy1").css('animation', '')
+										}, 3010);
+									}, 1000),
+									setTimeout(function() {
+										document.getElementById("gy2").innerHTML = '<img src="' + dataObj.rows[i].imgs + '"/>' + '<span>' +
+											dataObj.rows[i].name + '</span>' + '<span2>刚上了一节' + dataObj.rows[i].kc + '</span2>'
+										i++
+										if (i == dataObj.rows.length) {
+											i = 0
+										}
+										$("#gy2").css('animation', 'rainbow 3s forwards')
+										setTimeout(function() {
+											$("#gy2").css('animation', '')
+										}, 3010);
+									}, 3500),
+									setTimeout(function() {
+										document.getElementById("gy3").innerHTML = '<img src="' + dataObj.rows[i].imgs + '"/>' + '<span>' +
+											dataObj.rows[i].name + '</span>' + '<span2>刚上了一节' + dataObj.rows[i].kc + '</span2>'
+										i++
+										if (i == dataObj.rows.length) {
+											i = 0
+										}
+										$("#gy3").css('animation', 'rainbow 3s forwards')
+										setTimeout(function() {
+											$("#gy3").css('animation', '')
+										}, 3010);
+									}, 6000)
+							}, 8000)
+						},
+					})
+
+
+				},
+				fun3() {
+
+				},
+				fun4() {
+					$.ajax({
+						type: "POST",
+						url: "https://www.facebodyfitness.com/hi/main?hi=24CQRLLPJSUW",
+						success: function(res) {
+							var dataObj = eval("(" + res + ")")
+							$("#gy4").html(dataObj.rows[0].count + 100000)
+						},
+					})
+				}
 			},
 			mounted() {
 				this.fun()
+				this.fun2()
+				this.fun3()
+
+			},
+			created() {
+				this.fun4()
 			}
 		})
 	</script>

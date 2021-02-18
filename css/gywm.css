@@ -1,11 +1,11 @@
 .oy-gy-1{
-	width: 1280px;
-	height: 650px;
-	background-image: url(https://res.facebodyfitness.com/onlinevideo/img/src=http___wyssxjs.com_home_6_2_ofdvjg_resource_2017_11_30_5a1f783927379.png&refer=http___wyssxjs.jfif);
+	height: 852px;
+	background-image: url(https://res.facebodyfitness.com/onlinevideo/img/ON5A2374.JPG);
+	/* src=http___wyssxjs.com_home_6_2_ofdvjg_resource_2017_11_30_5a1f783927379.png&refer=http___wyssxjs.jfif */
 	background-size: 100% 100%;
 	margin-top: 2px;
 }
-.oy-gy-1 { width: 100%;  }
+.oy-gy-1 { width:1920px;  }
 @media screen and (max-width: 1000px)
 {
 .oy-gy-1 { width:1280px; }
@@ -161,4 +161,38 @@ body div {
 	position: absolute;
 	right: 665px;
 	top: 700px;
+}
+.oy-gy-1 div{
+	width: 250px;
+	height: 50px;
+	opacity: 0;
+	font-size: 12px;
+	color: white;
+}
+@keyframes rainbow {
+  0% { opacity: 1;transform: translate(0px,50px); }
+  25% { opacity: 0.75;}
+  50% { opacity: 0.5; }
+  70% { opacity: 0.25; }
+  100% { opacity: 0; }
+}
+#gy1 img,#gy2 img,#gy3 img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	float: left;
+}
+#gy1 span,#gy2 span,#gy3 span{
+	width: 180px;
+	height: 25px;
+	float: left;
+	line-height: 25px;
+	padding-left: 20px;
+}
+#gy1 span2,#gy2 span2,#gy3 span2{
+	width: 180px;
+	padding-left: 20px;
+	height: 25px;
+	float: left;
+	line-height: 25px;
 }
