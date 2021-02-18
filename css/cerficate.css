@@ -405,7 +405,7 @@ input:hover[type=text], input:hover[type=password], select:hover, textarea:hover
 }
 @media screen and (max-width: 1000px)
 {
-.ydxy-1 { width:1280px; }
+.ydxy-1 { width:1480px; }
 }
 .cgzx-1 { width:1920px;  }
 @media screen and (min-width: 2040px)
@@ -414,6 +414,6 @@ input:hover[type=text], input:hover[type=password], select:hover, textarea:hover
 }
 @media screen and (max-width: 1000px)
 {
-.cgzx-1 { width:1280px; }
+.cgzx-1 { width:1480px; }
 }
 
