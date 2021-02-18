@@ -8,8 +8,6 @@
 @media screen and (min-width: 2040px) { 
 .oy-tsn-1 { width:2040px; }
 }
-
-.oy-tsn-1 { width: 1980px;  }
 @media screen and (max-width: 1000px)
 {
 .oy-tsn-1 { width:1280px; }
