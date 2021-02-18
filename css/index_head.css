@@ -4,7 +4,7 @@ body div{
 body{
 	font-family: 微软雅黑 !important;
 }
-#app { width:1920px;  }
+#app { width:100%;  }
 @media screen and (max-width: 1000px)
 {
 #app { width:1480px; }
@@ -13,7 +13,7 @@ body{
 	height: 115px;
 	background-color: #523d95;
 }
-.oy-head { width:1920px;  }
+.oy-head { width:100%; }
 @media screen and (max-width: 1000px)
 {
 .oy-head { width:1480px; }
@@ -51,7 +51,7 @@ body{
 	margin-top: 50px;
 }
 
-.oy-tail-1 { width:1920px;  }
+.oy-tail-1 { width:100%;  }
 @media screen and (max-width: 1000px)
 {
 .oy-tail-1 { width:1480px; }
