@@ -122,7 +122,17 @@
 
 			$("#search").click(function() {
 				var data = $(".cer_input").val();
-				search(data)
+				if (data==''||data==null||data==undefined) {
+				　　　　　　alert("请输入内容"); 
+				　　　　　　return false; 
+				　　　　} 
+				　　　　if (!(/(^[1-9]\d*$)/.test(data))) { 
+				　　　　　　alert("请输入正确编号"); 
+				　　　　　　return false; 
+				　　　　}else { 
+				　　　　　　search(data)
+				　　　　} 
+				
 			})
 		})
 
