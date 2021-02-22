@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div style="margin-top: 2px;height: 852px;" class="ydxy-1">
-				<img src="https://res.facebodyfitness.com/onlinevideo/img/banner31.jpg" style="width: 100%;height: 100%;"/>
+				<img src="https://res.facebodyfitness.com/onlinevideo/img/ON5A3119.JPG" style="width: 100%;height: 100%;"/>
 			</div>
 			<div class="search" style="width: 1280px;height: 178px;margin-top: 20px;">
 				<div>
@@ -265,8 +265,19 @@
 			},
 			methods:{
 				cx(){
-					id = window.btoa(window.encodeURIComponent(this.id));
-					window.location.href="zscx.html?id="+id;
+							var num = this.id; 
+					　　　　if (num==''||num==null||num==undefined) { 
+					　　　　　　alert("请输入内容"); 
+					　　　　　　return false; 
+					　　　　} 
+					　　　　if (!(/(^[1-9]\d*$)/.test(num))) { 
+					　　　　　　alert("请输入正确编号"); 
+					　　　　　　return false; 
+					　　　　}else { 
+								$(".cer_input").val("");
+					　　　　　　id = window.btoa(window.encodeURIComponent(this.id));
+								window.location.href="zscx.html?id="+id;
+					　　　　} 
 				}
 			}
 		})

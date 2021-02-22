@@ -137,8 +137,9 @@ ul, li, ol { list-style: none; line-height: normal; }
     color: gray;
 }
 #table td{
-    width: 200px;
-    height: 45px;
+        width: 311px;
+        height: 49px;
+        text-align: right;
 }
 #table tr{
     width: 200px;
