@@ -272,6 +272,14 @@ ul, li, ol { list-style: none; line-height: normal; }
 
 .section32 .box .item11 .con, .section32 .box .item10 .con { color: #6b6b6b; }
 
+.section32 .box .item33, .section32 .box .item3 { width: 66.66%; }
+
+.section32 .box .item44, .section32 .box .item10 { background-color: #1e1e1e; padding: 50px 30px; }
+
+.section32 .box .item44 h3, .section32 .box .item44 .txt1, .section32 .box .item10 h3, .section32 .box .item10 .txt1 { color: #1e1e1e; }
+
+.section32 .box .item44 .con, .section32 .box .item10 .con { color: #6b6b6b; }
+
 .section32 .box .item4, .section32 .box .item8 { background-color: #ebebeb; padding: 50px 30px; }
 
 .section32 .box .item4 h3, .section32 .box .item4 .txt1, .section32 .box .item8 h3, .section32 .box .item8 .txt1 { color: #1e1e1e; }
